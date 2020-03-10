@@ -33,3 +33,6 @@ report/
 .bundle/
 docs/_site/
 docs/vendor/
+
+# Binary
+cloud_sql_proxy
