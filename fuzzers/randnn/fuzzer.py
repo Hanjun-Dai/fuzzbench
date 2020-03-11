@@ -113,7 +113,7 @@ def fuzz(input_corpus, output_corpus, target_binary):
 
     nn_sampler = RnnSampler(vocab, 128)
 
-    for idx in range(10):
+    for idx in range(10000):
         inputs = nn_sampler(1, len(samples[0])).view(-1).data.cpu().numpy()
 
         fname = os.path.join(output_corpus, 'sample-%d' % idx)
