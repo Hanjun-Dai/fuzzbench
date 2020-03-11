@@ -17,7 +17,7 @@ import shutil
 import subprocess
 import os
 
-# from fuzzers import utils
+from fuzzers import utils
 
 # OUT environment variable is the location of build directory (default is /out).
 
@@ -49,7 +49,7 @@ from torch.nn.parameter import Parameter
 import torch.nn.functional as F
 import torch.optim as optim
 
-from pytorch_util import glorot_uniform, MLP
+from fuzzers.randnn.pytorch_util import glorot_uniform, MLP
 
 
 class AutoregSampler(nn.Module):
